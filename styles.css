@@ -38,6 +38,7 @@ h1 {
 
 .number, 
 .text {
+	text-align: center;
 	font-family: var(--font);
 	color: white;
 }
