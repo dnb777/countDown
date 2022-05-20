@@ -24,6 +24,13 @@ h1 {
 	color: snow;
 	text-align: center;
 }
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
 .number, 
 .text {
 	font-family: var(--font);
