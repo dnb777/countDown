@@ -14,10 +14,11 @@ function countdown(){
 
 	const totalSeconds = diff / 1000;
 
-	const sec = Math.floor(totalSeconds % 60)
-	const minutes = Math.floor((totalSeconds / 60) % 60)
-	const hours = Math.floor((totalSeconds / 3600) % 24)
-	const days = Math.floor(totalSeconds / (3600 * 24))
+	sec.textContent = Math.floor(totalSeconds % 60)
+	mins.textContent = Math.floor((totalSeconds / 60) % 60)
+	hours.textContent = Math.floor((totalSeconds / 3600) % 24)
+	days.textContent = Math.floor(totalSeconds / (3600 * 24))
+
 }
 countdown();
 
