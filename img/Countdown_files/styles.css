@@ -34,7 +34,9 @@ h1 {
 		font-size:  5rem;
 	}
 }
-
+.container span {
+	text-align: center;
+}
 .container {
 	display: flex;
 	flex-wrap: wrap;
@@ -47,9 +49,6 @@ h1 {
 	.container {
 		gap: 8rem;
 	}
-}
-.wrap {
-	text-align: center;
 }
 .number, 
 .text {
