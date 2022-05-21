@@ -5,13 +5,21 @@ const hours = document.querySelector("#hours");
 const mins = document.querySelector("#mins");
 const sec = document.querySelector("#sec");
 
-function getTimeLeft(){
-	const currentDate = new Date();
+function countdown(){
+	const currentYear = new Date();
 	const nextYear = new Date(new Date().getFullYear(), 0, 1);
 	nextYear.setFullYear(nextYear.getFullYear()+1);
 
-	const diff = Math.abs(nextYear - currentDate);
+	const diff = Math.abs(nextYear - currentYear);
 
-	return diff
+	const totalSeconds = diff / 1000;
+
+	const sec = Math.floor(totalSeconds % 60)
+	const minutes = Math.floor((totalSeconds / 60) % 60)
+	const hours = Math.floor((totalSeconds / 3600) % 24)
+	const days = Math.floor(totalSeconds / (3600 * 24))
 }
-setCount();
+countdown();
+
+
+setInterval(countdown, 1000)
