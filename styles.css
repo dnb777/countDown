@@ -27,6 +27,7 @@ h1 {
 	font-size: 3rem;
 	color: snow;
 	text-align: center;
+	padding: 1rem;
 }
 @media (min-width: 768px){
 	h1 {
